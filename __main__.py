@@ -15,7 +15,7 @@ def run_game():
 
         game_map = Map(size=14, screen=screen)
 
-        game_map.draw()
+        game_map.draw_map()
 
         pygame.display.update()
 
