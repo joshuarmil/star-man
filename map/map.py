@@ -12,8 +12,8 @@ class Map:
 
         self.width = self.height = size
 
-        self.pixel_height = size * (self.square_length_in_pixels + self.padding) + self.padding
-        self.pixel_width = self.pixel_height
+        self.height_in_pixels = size * (self.square_length_in_pixels + self.padding) + self.padding
+        self.width_in_pixels = self.height_in_pixels
 
         self.map = self._build_map()
 
