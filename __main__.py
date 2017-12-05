@@ -10,6 +10,7 @@ def run_game():
         pygame.init()
 
         screen = pygame.display.set_mode((height, width))
+        pygame.display.set_caption('The Saddest Pup')
 
         screen.fill((42, 42, 42))
 
