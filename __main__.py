@@ -1,5 +1,7 @@
 import pygame
 from map.map import Map
+from char.player import Puppy
+from pygame.locals import *
 
 height = 600
 width = 400
@@ -16,7 +18,13 @@ def run_game():
 
         game_map = Map(size=14, screen=screen)
 
+        puppy = Puppy()
+
         game_map.draw_map()
+
+        player = pygame.sprite.RenderPlain(puppy)
+
+        player.draw(screen)
 
         pygame.display.update()
 
