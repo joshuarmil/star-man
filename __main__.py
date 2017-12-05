@@ -28,6 +28,11 @@ def run_game():
 
         pygame.display.update()
 
+        while 1:
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    return
+
     finally:
         pygame.quit()
 
