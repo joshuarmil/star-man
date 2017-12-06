@@ -1,6 +1,6 @@
 import pygame
 from map.map import Map
-from char.player import Puppy
+from characters.puppy import Puppy
 from pygame.locals import *
 
 height = 600
