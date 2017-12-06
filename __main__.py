@@ -28,10 +28,13 @@ def run_game():
 
         pygame.display.update()
 
-        while 1:
+        game_running = True
+
+        while game_running:
             for event in pygame.event.get():
                 if event.type == QUIT:
-                    return
+                    game_running = False
+                    break
 
     finally:
         pygame.quit()
