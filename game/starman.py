@@ -35,11 +35,11 @@ class StarMan:
             pygame.quit()
 
     def draw_map(self):
-        for row in self.game_map.matrix:
-            for map_rect in row:
+        for row in self.game_map.map:
+            for map_square in row:
 
                 pygame.draw.rect(
                     self.screen,
-                    self.game_map.available_square_color,
-                    map_rect
+                    map_square.color,
+                    map_square.rect
                 )
